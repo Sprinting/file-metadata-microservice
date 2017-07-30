@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title API Basejump | File Metadata Microservice
+    link(rel = 'shortcut icon' 
+    href = ref="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" 
+    type="image/x-icon")
+    link(
+    href="https://fonts.googleapis.com/css?family=Roboto" 
+    rel="stylesheet" 
+    type="text/css")
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    rel='stylesheet')
+    link(href="public/style.css" 
+    rel="stylesheet" 
+    type="text/css")
+body
+  div(class="container")
+    h1 API Basejump: File Metadata Microservice
+    h3 Part 5 of Free Code Camp Backend Challenges
+    form(action=route,method='POST' enctype='multipart/form-data')
+      div(class='form-group')
+        label(for='upfile' class='custom_file_upload') Choose File
+        input(type='file' 
+        class='form-control' 
+        id='upfile'
+        name='upfile' 
+        value="asd"
+        required) 
+      div(class='form-group')
+        input(type='submit' 
+        class='form-control' 
+        id='submit'
+        name='submit')
+    div
+      p
+        a(href=files) Uploaded Files
+
+        
